@@ -1,0 +1,62 @@
+img {
+  width: 100%;
+  display: block;
+}
+body {
+  background-color: #eee;
+}
+div {
+  border: dotted;
+}
+.wrapper {
+  width: 1200px;
+  margin: auto;
+  background-color: #eee;
+}
+.header {
+  display: flex;
+  justify-content: space-between;
+}
+.menu-buttons-div {
+  display: flex;
+}
+.grid-container {
+  display: grid;
+  grid-template-areas:
+    "intro-card intro-card intro-card intro-card"
+    "grooming grooming grooming partners"
+    ". . . partners";
+}
+.intro-card {
+  background-image: url("../img/happiest-dog.webp");
+  color: white;
+  height: 600px;
+  grid-area: intro-card;
+  display: flex;
+  justify-items: end;
+  align-items: flex-end;
+  border-radius: 50px;
+}
+#intro-card-text {
+  margin-left: 25px;
+}
+.card {
+  background-color: white;
+  
+}
+.october-grooming-card {
+    grid-area: grooming;
+  display: flex;
+  justify-content: space-evenly;
+  height: 300px;
+}
+.october-grooming-text-div {
+  width: 100%;
+}
+.october-grooming-image-div {
+  background-image: url("../img/groomin.webp");
+  width: 100%;
+}
+.partners{
+    grid-area: partners;
+}
