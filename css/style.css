@@ -1,12 +1,9 @@
 img {
-  width: 100%;
   display: block;
+  border-radius: 20px;
 }
 body {
   background-color: #eee;
-}
-div {
-  border: dotted;
 }
 .wrapper {
   width: 1200px;
@@ -17,15 +14,36 @@ div {
   display: flex;
   justify-content: space-between;
 }
-.menu-buttons-div {
+#pet-resort-logo-div {
   display: flex;
+  gap: 20px;
+}
+.menu-button {
+  padding: 5px;
+  color: black;
+  font-weight: 900;
+}
+.menu-buttons-nav {
+  display: flex;
+}
+#no-line {
+  text-decoration: none;
+}
+#menu-buttons-list {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 50px;
+  margin-right: 30px;
 }
 .grid-container {
   display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
   grid-template-areas:
     "intro-card intro-card intro-card intro-card"
     "grooming grooming grooming partners"
-    ". . . partners";
+    "merch buddies-for-life fine-dining partners";
+  gap: 20px;
 }
 .intro-card {
   background-image: url("../img/happiest-dog.webp");
@@ -34,29 +52,49 @@ div {
   grid-area: intro-card;
   display: flex;
   justify-items: end;
-  align-items: flex-end;
-  border-radius: 50px;
+  align-items: end;
+  border-radius: 20px;
 }
 #intro-card-text {
   margin-left: 25px;
 }
 .card {
   background-color: white;
-  
+  border-radius: 20px;
 }
 .october-grooming-card {
-    grid-area: grooming;
+  grid-area: grooming;
   display: flex;
   justify-content: space-evenly;
-  height: 300px;
-}
-.october-grooming-text-div {
-  width: 100%;
 }
 .october-grooming-image-div {
-  background-image: url("../img/groomin.webp");
-  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-.partners{
-    grid-area: partners;
+.partners {
+  grid-area: partners;
+  padding: 20px;
+}
+.partner-logo {
+  display: flex;
+  justify-content: center;
+}
+#ads-picture-div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+#padding {
+  padding: 10px;
+}
+#merch {
+  grid-area: merch;
+}
+#buddies-for-life {
+  grid-area: buddies-for-life;
+}
+#fine-dining {
+  grid-area: fine-dining;
 }
