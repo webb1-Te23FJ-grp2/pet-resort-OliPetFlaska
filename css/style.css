@@ -1,6 +1,7 @@
 img {
   display: block;
   border-radius: 20px;
+  max-width: 100%;
 }
 body {
   background-color: #eee;
@@ -57,6 +58,7 @@ body {
 }
 #intro-card-text {
   margin-left: 25px;
+  margin-bottom: 7px;
 }
 .card {
   background-color: white;
@@ -65,20 +67,27 @@ body {
 .october-grooming-card {
   grid-area: grooming;
   display: flex;
-  justify-content: space-evenly;
 }
 .october-grooming-image-div {
   display: flex;
-  justify-content: center;
   align-items: center;
+  object-fit: fill;
+  padding: 20px;
+}
+.october-grooming-image-div img {
+  width: 450px;
+  height: 300px;
 }
 .partners {
   grid-area: partners;
-  padding: 20px;
+  padding: 0 20px;
 }
 .partner-logo {
   display: flex;
   justify-content: center;
+}
+.ads-card {
+  padding-top: 10px;
 }
 #ads-picture-div {
   display: flex;
@@ -87,7 +96,7 @@ body {
   margin-top: 20px;
 }
 #padding {
-  padding: 10px;
+  padding: 20px;
 }
 #merch {
   grid-area: merch;
@@ -97,4 +106,11 @@ body {
 }
 #fine-dining {
   grid-area: fine-dining;
+}
+p,
+h1,
+h2 {
+  font-family: "Bokor", system-ui;
+  font-weight: 400;
+  font-style: normal;
 }
