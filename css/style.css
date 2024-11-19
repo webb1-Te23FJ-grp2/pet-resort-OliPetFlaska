@@ -86,9 +86,6 @@ body {
   display: flex;
   justify-content: center;
 }
-.ads-card {
-  padding-top: 10px;
-}
 #ads-picture-div {
   display: flex;
   justify-content: center;
